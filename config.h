@@ -5,11 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+    "Inconsolata Nerd Font Mono:pixelsize=16:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -86,10 +85,10 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -126,10 +125,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 258;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+static unsigned int defaultcs = 258;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
